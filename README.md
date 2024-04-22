@@ -12,7 +12,7 @@ export VAULT_TOKEN="<VAULT_TOKEN>"
 pip3 install hvac -t ./platform/tmp/layers/hvac/python
 ```
 
-3.To deploy, perform a Terraform run in the `platform` directory
+3. To deploy, perform a Terraform run in the `platform` directory
 ```
 cd platform
 terraform apply --auto-approve 
