@@ -25,3 +25,9 @@ Add the following variables for Terraform:
 | target_account_id | The account to deploy the Lambda function into         |
 | vault_addr        | Public URL of your Vault cluster                       |
 | vault_account_id  | AWS Account ID where your Vault cluster is deployed in |
+
+# Vault Lambda Extension write to Disk
+![Lambda extension write to disk](./img/disk.png)
+
+# Vault Lambda Extension as Local Proxy
+![Lambda extension as proxy](./img/local-proxy.png)
