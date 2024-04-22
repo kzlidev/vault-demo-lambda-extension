@@ -7,7 +7,12 @@
 export VAULT_TOKEN="<VAULT_TOKEN>"
 ```
 
-2. To deploy, perform a Terraform run in the `platform` directory
+2. Install HVAC Python dependency as Lambda Layer in the **root directory**
+```
+pip3 install hvac -t ./platform/tmp/layers/hvac/python
+```
+
+3.To deploy, perform a Terraform run in the `platform` directory
 ```
 cd platform
 terraform apply --auto-approve 

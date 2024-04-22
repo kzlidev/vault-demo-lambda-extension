@@ -5,5 +5,8 @@ resource "vault_policy" "lambda" {
 path "${vault_kv_secret_v2.secret.path}" {
   capabilities = [ "read" ]
 }
+path "${vault_mount.transit.path}/*" {
+   capabilities = [ "create", "read", "update", "delete", "list" ]
+}
 EOT
 }
