@@ -22,7 +22,7 @@ resource "aws_lambda_function" "test_lambda" {
     variables = {
       VAULT_ADDR                     = var.vault_addr
       VAULT_NAMESPACE                = var.vault_namespace
-      VAULT_AUTH_PROVIDER            = "aws"
+      VAULT_AUTH_PROVIDER            = vault_auth_backend.aws.path
       VAULT_AUTH_ROLE                = aws_iam_role.lambda_role.name
       VAULT_SECRET_PATH              = vault_kv_secret_v2.secret.path
       VAULT_SECRET_FILE              = "/tmp/vault/secret.json"
