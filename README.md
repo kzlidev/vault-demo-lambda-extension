@@ -13,8 +13,13 @@ pip3 install hvac -t ./platform/tmp/layers/hvac/python
 ```
 
 3. To deploy, perform a Terraform run in the `platform` directory
+
 ```
+# For HashiCorp Employees only
+doormat login -f && eval $(doormat aws export --role $(doormat aws list | grep -m 1 role))
+
 cd platform
+terraform init
 terraform apply --auto-approve 
 ```
 
