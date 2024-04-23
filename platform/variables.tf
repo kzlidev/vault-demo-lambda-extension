@@ -33,7 +33,6 @@ variable "sts_account_name" {
 
 variable "vault_account_id" {
   type    = string
-  default = "136632009556"
 }
 
 variable "vault_addr" {

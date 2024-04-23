@@ -32,7 +32,7 @@ Add the following variables for Terraform:
 | vault_account_id  | AWS Account ID where your Vault cluster is deployed in |
 
 To get the `vault_account_id`, go into your HCP portal, click on HashiCorp Virtual Networks. 
-Click on the hvn then you want to connect to, on the top right, click on `Create connection` button and select `Transit Gateway`. 
+Click on the hvn that you want to connect to, on the top right, click on `Create connection` button and select `Transit Gateway`. 
 
 On the tab, click on `Web console` and when you scroll down, you should see the `AWS Account ID` information. 
 
