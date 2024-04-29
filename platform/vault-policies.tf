@@ -10,3 +10,10 @@ path "${vault_mount.transit.path}/*" {
 }
 EOT
 }
+
+# path "demo-kvv2/data/demo-secret" {
+#   capabilities = [ "read" ]
+# }
+# path "demo-transit/*" {
+#    capabilities = [ "create", "read", "update", "delete", "list" ]
+# }
