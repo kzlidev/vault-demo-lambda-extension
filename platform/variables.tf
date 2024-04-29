@@ -22,19 +22,6 @@ variable "region" {
   description = "AWS Region"
 }
 
-variable "target_account_id" {
-  type    = string
-}
-
-variable "sts_account_name" {
-  type    = string
-  default = "vault-auth-role"
-}
-
-variable "vault_account_id" {
-  type    = string
-}
-
 variable "vault_addr" {
   type    = string
 }
